@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import { styles } from "@/style";
 
 export const ContactSection = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [form, setForm] = useState({
     name: "",
     email: "",
